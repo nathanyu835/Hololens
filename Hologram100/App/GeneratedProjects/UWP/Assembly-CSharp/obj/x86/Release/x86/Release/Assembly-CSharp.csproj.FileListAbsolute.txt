@@ -1,0 +1,1 @@
+C:\Hololens\Hologram100\App\GeneratedProjects\UWP\Assembly-CSharp\obj\x86\Release\x86\Release\Assembly-CSharp.csproj.CoreCompileInputs.cache

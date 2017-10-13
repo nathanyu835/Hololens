@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hologram250", "Hologram250.csproj", "{D9650A56-2ECA-FF78-E351-954BB2C9F0E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hologram250.Plugins", "Hologram250.Plugins.csproj", "{A870A3B9-7B3F-B0B6-68E3-A4C13DF279B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hologram250.Editor.Plugins", "Hologram250.Editor.Plugins.csproj", "{F97F4DA7-77EA-D2EA-EE63-9DB1B42CB7AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hologram250.Editor", "Hologram250.Editor.csproj", "{2AC39292-3D66-0569-8332-E2AB705DC348}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D9650A56-2ECA-FF78-E351-954BB2C9F0E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9650A56-2ECA-FF78-E351-954BB2C9F0E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9650A56-2ECA-FF78-E351-954BB2C9F0E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9650A56-2ECA-FF78-E351-954BB2C9F0E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A870A3B9-7B3F-B0B6-68E3-A4C13DF279B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A870A3B9-7B3F-B0B6-68E3-A4C13DF279B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A870A3B9-7B3F-B0B6-68E3-A4C13DF279B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A870A3B9-7B3F-B0B6-68E3-A4C13DF279B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F97F4DA7-77EA-D2EA-EE63-9DB1B42CB7AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F97F4DA7-77EA-D2EA-EE63-9DB1B42CB7AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F97F4DA7-77EA-D2EA-EE63-9DB1B42CB7AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F97F4DA7-77EA-D2EA-EE63-9DB1B42CB7AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AC39292-3D66-0569-8332-E2AB705DC348}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AC39292-3D66-0569-8332-E2AB705DC348}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AC39292-3D66-0569-8332-E2AB705DC348}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AC39292-3D66-0569-8332-E2AB705DC348}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

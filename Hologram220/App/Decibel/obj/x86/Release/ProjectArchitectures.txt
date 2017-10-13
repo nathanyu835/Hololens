@@ -1,0 +1,4 @@
+C:\Hololens\Holograms220\App\Decibel\Decibel.csproj;x86
+C:\Hololens\Holograms220\App\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj;x86
+C:\Hololens\Holograms220\App\GeneratedProjects\UWP\Assembly-CSharp-firstpass\Assembly-CSharp-firstpass.csproj;x86
+C:\Hololens\Holograms220\App\GeneratedProjects\UWP\Assembly-CSharp-firstpass\Assembly-CSharp-firstpass.csproj;x86

@@ -1,0 +1,4 @@
+C:\Users\Nathan Yu\Documents\GitHub\Hololens\Hologram250\App\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj;x86
+C:\Users\Nathan Yu\Documents\GitHub\Hololens\Hologram250\App\GeneratedProjects\UWP\Assembly-CSharp-firstpass\Assembly-CSharp-firstpass.csproj;x86
+C:\Users\Nathan Yu\Documents\GitHub\Hololens\Hologram250\App\GeneratedProjects\UWP\Assembly-CSharp-firstpass\Assembly-CSharp-firstpass.csproj;x86
+C:\Users\Nathan Yu\Documents\GitHub\Hololens\Hologram250\App\Project Island\Project Island.csproj;x86

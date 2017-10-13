@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Holograms220", "Holograms220.csproj", "{09901077-6FCF-A734-8170-46E1D5A1C22C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Holograms220.Editor", "Holograms220.Editor.csproj", "{F2C6B75B-1B20-3F87-3BB7-A63C21D36B0D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09901077-6FCF-A734-8170-46E1D5A1C22C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09901077-6FCF-A734-8170-46E1D5A1C22C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09901077-6FCF-A734-8170-46E1D5A1C22C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09901077-6FCF-A734-8170-46E1D5A1C22C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2C6B75B-1B20-3F87-3BB7-A63C21D36B0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2C6B75B-1B20-3F87-3BB7-A63C21D36B0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2C6B75B-1B20-3F87-3BB7-A63C21D36B0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2C6B75B-1B20-3F87-3BB7-A63C21D36B0D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

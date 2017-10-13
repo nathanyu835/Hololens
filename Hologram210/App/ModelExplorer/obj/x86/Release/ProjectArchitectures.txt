@@ -1,0 +1,4 @@
+C:\Hololens\ModelExplorer\App\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj;x86
+C:\Hololens\ModelExplorer\App\GeneratedProjects\UWP\Assembly-CSharp-firstpass\Assembly-CSharp-firstpass.csproj;x86
+C:\Hololens\ModelExplorer\App\GeneratedProjects\UWP\Assembly-CSharp-firstpass\Assembly-CSharp-firstpass.csproj;x86
+C:\Hololens\ModelExplorer\App\ModelExplorer\ModelExplorer.csproj;x86

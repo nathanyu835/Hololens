@@ -1,0 +1,1265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(ProjectDir)..\..\..\UnityCommon.props" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{934ec2f0-3b91-47da-89e5-d70a818964ed}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AssemblyCSharpWSA</RootNamespace>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion>10.0.16299.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.10240.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <BaseIntermediateOutputPath>obj\x86\Debug\</BaseIntermediateOutputPath>
+    <DefineConstants>DEBUG;TRACE;ENABLE_PROFILER;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_2_0;UNITY_2017_2;UNITY_2017;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;PLATFORM_METRO;UNITY_METRO;UNITY_METRO_API;PLATFORM_WINRT;UNITY_WINRT;ENABLE_WINRT_PINVOKE;ENABLE_LAZY_METHOD_CACHING;ENABLE_MOVIES;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_NETWORK;ENABLE_EVENT_QUEUE;UNITY_PLATFORM_THREAD_TO_CORE_MAPPING;ENABLE_SUBSTANCE;PLATFORM_SUPPORTS_ADS_ID;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;CURL_STATICLIB;ENABLE_VR;ENABLE_AR;ENABLE_SPATIALTRACKING;UNITY_WSA;ENABLE_DOTNET;UNITY_WINRT_10_0;UNITY_PRO_LICENSE;MOBILE_INPUT;NETFX_CORE;ENABLE_WINMD_SUPPORT;WINDOWS_UWP;UNITY_UWP;UNITY_WSA_10_0;</DefineConstants>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <BaseIntermediateOutputPath>obj\x86\Release\</BaseIntermediateOutputPath>
+    <DefineConstants>TRACE;ENABLE_PROFILER;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_2_0;UNITY_2017_2;UNITY_2017;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;PLATFORM_METRO;UNITY_METRO;UNITY_METRO_API;PLATFORM_WINRT;UNITY_WINRT;ENABLE_WINRT_PINVOKE;ENABLE_LAZY_METHOD_CACHING;ENABLE_MOVIES;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_NETWORK;ENABLE_EVENT_QUEUE;UNITY_PLATFORM_THREAD_TO_CORE_MAPPING;ENABLE_SUBSTANCE;PLATFORM_SUPPORTS_ADS_ID;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;CURL_STATICLIB;ENABLE_VR;ENABLE_AR;ENABLE_SPATIALTRACKING;UNITY_WSA;ENABLE_DOTNET;UNITY_WINRT_10_0;UNITY_PRO_LICENSE;MOBILE_INPUT;NETFX_CORE;ENABLE_WINMD_SUPPORT;WINDOWS_UWP;UNITY_UWP;UNITY_WSA_10_0;</DefineConstants>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Master|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x86\Master\</OutputPath>
+    <BaseIntermediateOutputPath>obj\x86\Master\</BaseIntermediateOutputPath>
+    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_2_0;UNITY_2017_2;UNITY_2017;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;PLATFORM_METRO;UNITY_METRO;UNITY_METRO_API;PLATFORM_WINRT;UNITY_WINRT;ENABLE_WINRT_PINVOKE;ENABLE_LAZY_METHOD_CACHING;ENABLE_MOVIES;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_NETWORK;ENABLE_EVENT_QUEUE;UNITY_PLATFORM_THREAD_TO_CORE_MAPPING;ENABLE_SUBSTANCE;PLATFORM_SUPPORTS_ADS_ID;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;CURL_STATICLIB;ENABLE_VR;ENABLE_AR;ENABLE_SPATIALTRACKING;UNITY_WSA;ENABLE_DOTNET;UNITY_WINRT_10_0;UNITY_PRO_LICENSE;MOBILE_INPUT;NETFX_CORE;ENABLE_WINMD_SUPPORT;WINDOWS_UWP;UNITY_UWP;UNITY_WSA_10_0;</DefineConstants>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <BaseIntermediateOutputPath>obj\x64\Debug\</BaseIntermediateOutputPath>
+    <DefineConstants>DEBUG;TRACE;ENABLE_PROFILER;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_2_0;UNITY_2017_2;UNITY_2017;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;PLATFORM_METRO;UNITY_METRO;UNITY_METRO_API;PLATFORM_WINRT;UNITY_WINRT;ENABLE_WINRT_PINVOKE;ENABLE_LAZY_METHOD_CACHING;ENABLE_MOVIES;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_NETWORK;ENABLE_EVENT_QUEUE;UNITY_PLATFORM_THREAD_TO_CORE_MAPPING;ENABLE_SUBSTANCE;PLATFORM_SUPPORTS_ADS_ID;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;CURL_STATICLIB;ENABLE_VR;ENABLE_AR;ENABLE_SPATIALTRACKING;UNITY_WSA;ENABLE_DOTNET;UNITY_WINRT_10_0;UNITY_PRO_LICENSE;MOBILE_INPUT;NETFX_CORE;ENABLE_WINMD_SUPPORT;WINDOWS_UWP;UNITY_UWP;UNITY_WSA_10_0;</DefineConstants>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <BaseIntermediateOutputPath>obj\x64\Release\</BaseIntermediateOutputPath>
+    <DefineConstants>TRACE;ENABLE_PROFILER;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_2_0;UNITY_2017_2;UNITY_2017;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;PLATFORM_METRO;UNITY_METRO;UNITY_METRO_API;PLATFORM_WINRT;UNITY_WINRT;ENABLE_WINRT_PINVOKE;ENABLE_LAZY_METHOD_CACHING;ENABLE_MOVIES;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_NETWORK;ENABLE_EVENT_QUEUE;UNITY_PLATFORM_THREAD_TO_CORE_MAPPING;ENABLE_SUBSTANCE;PLATFORM_SUPPORTS_ADS_ID;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;CURL_STATICLIB;ENABLE_VR;ENABLE_AR;ENABLE_SPATIALTRACKING;UNITY_WSA;ENABLE_DOTNET;UNITY_WINRT_10_0;UNITY_PRO_LICENSE;MOBILE_INPUT;NETFX_CORE;ENABLE_WINMD_SUPPORT;WINDOWS_UWP;UNITY_UWP;UNITY_WSA_10_0;</DefineConstants>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Master|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x64\Master\</OutputPath>
+    <BaseIntermediateOutputPath>obj\x64\Master\</BaseIntermediateOutputPath>
+    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_2_0;UNITY_2017_2;UNITY_2017;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;PLATFORM_METRO;UNITY_METRO;UNITY_METRO_API;PLATFORM_WINRT;UNITY_WINRT;ENABLE_WINRT_PINVOKE;ENABLE_LAZY_METHOD_CACHING;ENABLE_MOVIES;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_NETWORK;ENABLE_EVENT_QUEUE;UNITY_PLATFORM_THREAD_TO_CORE_MAPPING;ENABLE_SUBSTANCE;PLATFORM_SUPPORTS_ADS_ID;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;CURL_STATICLIB;ENABLE_VR;ENABLE_AR;ENABLE_SPATIALTRACKING;UNITY_WSA;ENABLE_DOTNET;UNITY_WINRT_10_0;UNITY_PRO_LICENSE;MOBILE_INPUT;NETFX_CORE;ENABLE_WINMD_SUPPORT;WINDOWS_UWP;UNITY_UWP;UNITY_WSA_10_0;</DefineConstants>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|ARM' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <BaseIntermediateOutputPath>obj\ARM\Debug\</BaseIntermediateOutputPath>
+    <DefineConstants>DEBUG;TRACE;ENABLE_PROFILER;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_2_0;UNITY_2017_2;UNITY_2017;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;PLATFORM_METRO;UNITY_METRO;UNITY_METRO_API;PLATFORM_WINRT;UNITY_WINRT;ENABLE_WINRT_PINVOKE;ENABLE_LAZY_METHOD_CACHING;ENABLE_MOVIES;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_NETWORK;ENABLE_EVENT_QUEUE;UNITY_PLATFORM_THREAD_TO_CORE_MAPPING;ENABLE_SUBSTANCE;PLATFORM_SUPPORTS_ADS_ID;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;CURL_STATICLIB;ENABLE_VR;ENABLE_AR;ENABLE_SPATIALTRACKING;UNITY_WSA;ENABLE_DOTNET;UNITY_WINRT_10_0;UNITY_PRO_LICENSE;MOBILE_INPUT;NETFX_CORE;ENABLE_WINMD_SUPPORT;WINDOWS_UWP;UNITY_UWP;UNITY_WSA_10_0;</DefineConstants>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|ARM' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <BaseIntermediateOutputPath>obj\ARM\Release\</BaseIntermediateOutputPath>
+    <DefineConstants>TRACE;ENABLE_PROFILER;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_2_0;UNITY_2017_2;UNITY_2017;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;PLATFORM_METRO;UNITY_METRO;UNITY_METRO_API;PLATFORM_WINRT;UNITY_WINRT;ENABLE_WINRT_PINVOKE;ENABLE_LAZY_METHOD_CACHING;ENABLE_MOVIES;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_NETWORK;ENABLE_EVENT_QUEUE;UNITY_PLATFORM_THREAD_TO_CORE_MAPPING;ENABLE_SUBSTANCE;PLATFORM_SUPPORTS_ADS_ID;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;CURL_STATICLIB;ENABLE_VR;ENABLE_AR;ENABLE_SPATIALTRACKING;UNITY_WSA;ENABLE_DOTNET;UNITY_WINRT_10_0;UNITY_PRO_LICENSE;MOBILE_INPUT;NETFX_CORE;ENABLE_WINMD_SUPPORT;WINDOWS_UWP;UNITY_UWP;UNITY_WSA_10_0;</DefineConstants>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Master|ARM' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\ARM\Master\</OutputPath>
+    <BaseIntermediateOutputPath>obj\ARM\Master\</BaseIntermediateOutputPath>
+    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_2_0;UNITY_2017_2;UNITY_2017;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;PLATFORM_METRO;UNITY_METRO;UNITY_METRO_API;PLATFORM_WINRT;UNITY_WINRT;ENABLE_WINRT_PINVOKE;ENABLE_LAZY_METHOD_CACHING;ENABLE_MOVIES;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_NETWORK;ENABLE_EVENT_QUEUE;UNITY_PLATFORM_THREAD_TO_CORE_MAPPING;ENABLE_SUBSTANCE;PLATFORM_SUPPORTS_ADS_ID;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;CURL_STATICLIB;ENABLE_VR;ENABLE_AR;ENABLE_SPATIALTRACKING;UNITY_WSA;ENABLE_DOTNET;UNITY_WINRT_10_0;UNITY_PRO_LICENSE;MOBILE_INPUT;NETFX_CORE;ENABLE_WINMD_SUPPORT;WINDOWS_UWP;UNITY_UWP;UNITY_WSA_10_0;</DefineConstants>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="project.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Hologram250\App\GeneratedProjects\UWP\Assembly-CSharp-firstpass\Assembly-CSharp-firstpass.csproj">
+      <Project>{e102459d-4f5a-413c-b260-842bf29d4cfc}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.TilemapModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.UIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.UIElementsModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.SpriteMaskModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.ScreenCaptureModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.PhysicsModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.TerrainModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.StyleSheetsModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.StyleSheetsModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.UNETModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.VRModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.VideoModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.VehiclesModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="WinRTLegacy">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\WinRTLegacy.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.WindModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.WebModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.WebModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.UnityConnectModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.UnityWebRequestModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.Physics2DModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.AudioModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.ARModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.AnimationModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.CrashReportingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.ClothModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.AIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.AccessibilityModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.DirectorModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.JSONSerializeModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.InputModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.PerformanceReportingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.ParticleSystemModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ParticlesLegacyModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.ParticlesLegacyModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.GridModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.GameCenterModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.ImageConversionModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.Timeline">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.Timeline.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\nunit.framework.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.HoloLens">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.HoloLens.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.Networking.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <SDKReference Include="WindowsDesktop, Version=10.0.16299.0"/>
+    <SDKReference Include="WindowsIoT, Version=10.0.16299.0"/>
+    <SDKReference Include="WindowsMobile, Version=10.0.16299.0"/>
+    <SDKReference Include="WindowsTeam, Version=10.0.16299.0"/>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(UnityProjectDir)Assets\AppPrefabs\Support\Audio\UserSounds.cs">
+      <Link>AppPrefabs\Support\Audio\UserSounds.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\AppPrefabs\Support\Scripts\AudioTrigger.cs">
+      <Link>AppPrefabs\Support\Scripts\AudioTrigger.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\AppPrefabs\Support\Scripts\FixParticleScaleToOne.cs">
+      <Link>AppPrefabs\Support\Scripts\FixParticleScaleToOne.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\AppPrefabs\Support\Scripts\GameLogic\AdjustRotationToLocal.cs">
+      <Link>AppPrefabs\Support\Scripts\GameLogic\AdjustRotationToLocal.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\AppPrefabs\Support\Scripts\GameLogic\AlwaysPointingUp.cs">
+      <Link>AppPrefabs\Support\Scripts\GameLogic\AlwaysPointingUp.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\AppPrefabs\Support\Scripts\GameLogic\LevelControl.cs">
+      <Link>AppPrefabs\Support\Scripts\GameLogic\LevelControl.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\AppPrefabs\Support\Scripts\GameLogic\LevelDataControl.cs">
+      <Link>AppPrefabs\Support\Scripts\GameLogic\LevelDataControl.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\AppPrefabs\Support\Scripts\GameLogic\Puzzles\CratePuzzle.cs">
+      <Link>AppPrefabs\Support\Scripts\GameLogic\Puzzles\CratePuzzle.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\AppPrefabs\Support\Scripts\GameLogic\Puzzles\CrateScript.cs">
+      <Link>AppPrefabs\Support\Scripts\GameLogic\Puzzles\CrateScript.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\AppPrefabs\Support\Scripts\GameLogic\Puzzles\MineCartScript.cs">
+      <Link>AppPrefabs\Support\Scripts\GameLogic\Puzzles\MineCartScript.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\AppPrefabs\Support\Scripts\GameLogic\Puzzles\MiningTorchScript.cs">
+      <Link>AppPrefabs\Support\Scripts\GameLogic\Puzzles\MiningTorchScript.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\AppPrefabs\Support\Scripts\GameLogic\Puzzles\NumPadButton.cs">
+      <Link>AppPrefabs\Support\Scripts\GameLogic\Puzzles\NumPadButton.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\AppPrefabs\Support\Scripts\GameLogic\Puzzles\NumPadPuzzle.cs">
+      <Link>AppPrefabs\Support\Scripts\GameLogic\Puzzles\NumPadPuzzle.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\AppPrefabs\Support\Scripts\GameLogic\ShuttleLaunch.cs">
+      <Link>AppPrefabs\Support\Scripts\GameLogic\ShuttleLaunch.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\AppPrefabs\Support\Scripts\GameLogic\TeleportScript.cs">
+      <Link>AppPrefabs\Support\Scripts\GameLogic\TeleportScript.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\AppPrefabs\Support\Scripts\GameLogic\ToolTips.cs">
+      <Link>AppPrefabs\Support\Scripts\GameLogic\ToolTips.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\AppPrefabs\Support\Scripts\GameLogic\WinLightScript.cs">
+      <Link>AppPrefabs\Support\Scripts\GameLogic\WinLightScript.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\AppPrefabs\Support\Scripts\ScrollUVWave.cs">
+      <Link>AppPrefabs\Support\Scripts\ScrollUVWave.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\AppPrefabs\Support\Scripts\UI\AnimationWhenSelected.cs">
+      <Link>AppPrefabs\Support\Scripts\UI\AnimationWhenSelected.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\AppPrefabs\Support\Scripts\UI\BasicSharingStatus.cs">
+      <Link>AppPrefabs\Support\Scripts\UI\BasicSharingStatus.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\AppPrefabs\Support\Scripts\UI\DismissTutorialHandler.cs">
+      <Link>AppPrefabs\Support\Scripts\UI\DismissTutorialHandler.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\AppPrefabs\Support\Scripts\UI\JoinSelectedSessionButton.cs">
+      <Link>AppPrefabs\Support\Scripts\UI\JoinSelectedSessionButton.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\AppPrefabs\Support\Scripts\UI\PositionDebugButton.cs">
+      <Link>AppPrefabs\Support\Scripts\UI\PositionDebugButton.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\AppPrefabs\Support\Scripts\UI\ResetAnchorButton.cs">
+      <Link>AppPrefabs\Support\Scripts\UI\ResetAnchorButton.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\AppPrefabs\Support\Scripts\UI\ScaleOnGaze.cs">
+      <Link>AppPrefabs\Support\Scripts\UI\ScaleOnGaze.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\AppPrefabs\Support\Scripts\UI\ScrollingSessionListUIController.cs">
+      <Link>AppPrefabs\Support\Scripts\UI\ScrollingSessionListUIController.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\AppPrefabs\Support\Scripts\UI\ScrollSessionListButton.cs">
+      <Link>AppPrefabs\Support\Scripts\UI\ScrollSessionListButton.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\AppPrefabs\Support\Scripts\UI\SessionListButton.cs">
+      <Link>AppPrefabs\Support\Scripts\UI\SessionListButton.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\AppPrefabs\Support\Scripts\UI\SetTutorialText.cs">
+      <Link>AppPrefabs\Support\Scripts\UI\SetTutorialText.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\AppPrefabs\Support\Scripts\UI\StabalizationPlaneFallback.cs">
+      <Link>AppPrefabs\Support\Scripts\UI\StabalizationPlaneFallback.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\AppPrefabs\Support\Scripts\UI\StartSessionButton.cs">
+      <Link>AppPrefabs\Support\Scripts\UI\StartSessionButton.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\AppPrefabs\Support\Scripts\UI\ToggleDebugWindow.cs">
+      <Link>AppPrefabs\Support\Scripts\UI\ToggleDebugWindow.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\AppPrefabs\Support\Scripts\UI\ToggleSharingUIButton.cs">
+      <Link>AppPrefabs\Support\Scripts\UI\ToggleSharingUIButton.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\AppPrefabs\Support\Scripts\UI\TutorialNextButton.cs">
+      <Link>AppPrefabs\Support\Scripts\UI\TutorialNextButton.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\AppPrefabs\Support\Scripts\UI\TutorialSkipButton.cs">
+      <Link>AppPrefabs\Support\Scripts\UI\TutorialSkipButton.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\AppPrefabs\Support\Scripts\UI\WireupDebugPanel.cs">
+      <Link>AppPrefabs\Support\Scripts\UI\WireupDebugPanel.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\AppPrefabs\Support\Scripts\VRRoomControl.cs">
+      <Link>AppPrefabs\Support\Scripts\VRRoomControl.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\AppPrefabs\Support\SharingWithUNET\Scripts\BulletController.cs">
+      <Link>AppPrefabs\Support\SharingWithUNET\Scripts\BulletController.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\AppPrefabs\Support\SharingWithUNET\Scripts\GenericNetworkTransmitter.cs">
+      <Link>AppPrefabs\Support\SharingWithUNET\Scripts\GenericNetworkTransmitter.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\AppPrefabs\Support\SharingWithUNET\Scripts\HTKNetworkManager.cs">
+      <Link>AppPrefabs\Support\SharingWithUNET\Scripts\HTKNetworkManager.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\AppPrefabs\Support\SharingWithUNET\Scripts\NetworkDiscoveryWithAnchors.cs">
+      <Link>AppPrefabs\Support\SharingWithUNET\Scripts\NetworkDiscoveryWithAnchors.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\AppPrefabs\Support\SharingWithUNET\Scripts\PlayerController.cs">
+      <Link>AppPrefabs\Support\SharingWithUNET\Scripts\PlayerController.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\AppPrefabs\Support\SharingWithUNET\Scripts\SharedAnchorDebugText.cs">
+      <Link>AppPrefabs\Support\SharingWithUNET\Scripts\SharedAnchorDebugText.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\AppPrefabs\Support\SharingWithUNET\Scripts\SharedCollection.cs">
+      <Link>AppPrefabs\Support\SharingWithUNET\Scripts\SharedCollection.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\AppPrefabs\Support\SharingWithUNET\Scripts\UNetAnchorManager.cs">
+      <Link>AppPrefabs\Support\SharingWithUNET\Scripts\UNetAnchorManager.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\AppPrefabs\Support\SharingWithUNET\Scripts\UNetSharedHologram.cs">
+      <Link>AppPrefabs\Support\SharingWithUNET\Scripts\UNetSharedHologram.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Boundary\Scripts\BoundaryManager.cs">
+      <Link>HoloToolkit\Boundary\Scripts\BoundaryManager.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Boundary\Tests\Scripts\BoundaryTest.cs">
+      <Link>HoloToolkit\Boundary\Tests\Scripts\BoundaryTest.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\ControllerInfo.cs">
+      <Link>HoloToolkit\Input\Scripts\ControllerInfo.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\ControllerVisualizer.cs">
+      <Link>HoloToolkit\Input\Scripts\ControllerVisualizer.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\Cursor\AnimatedCursor.cs">
+      <Link>HoloToolkit\Input\Scripts\Cursor\AnimatedCursor.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\Cursor\Cursor.cs">
+      <Link>HoloToolkit\Input\Scripts\Cursor\Cursor.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\Cursor\CursorModifier.cs">
+      <Link>HoloToolkit\Input\Scripts\Cursor\CursorModifier.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\Cursor\ICursor.cs">
+      <Link>HoloToolkit\Input\Scripts\Cursor\ICursor.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\Cursor\ICursorModifier.cs">
+      <Link>HoloToolkit\Input\Scripts\Cursor\ICursorModifier.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\Cursor\InteractiveMeshCursor.cs">
+      <Link>HoloToolkit\Input\Scripts\Cursor\InteractiveMeshCursor.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\Cursor\MeshCursor.cs">
+      <Link>HoloToolkit\Input\Scripts\Cursor\MeshCursor.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\Cursor\ObjectCursor.cs">
+      <Link>HoloToolkit\Input\Scripts\Cursor\ObjectCursor.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\Cursor\SpriteCursor.cs">
+      <Link>HoloToolkit\Input\Scripts\Cursor\SpriteCursor.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\EditorInputSelector.cs">
+      <Link>HoloToolkit\Input\Scripts\EditorInputSelector.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\Focus\FocusDetails.cs">
+      <Link>HoloToolkit\Input\Scripts\Focus\FocusDetails.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\Focus\FocusManager.cs">
+      <Link>HoloToolkit\Input\Scripts\Focus\FocusManager.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\Focus\InputSourcePointer.cs">
+      <Link>HoloToolkit\Input\Scripts\Focus\InputSourcePointer.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\Focus\IPointingSource.cs">
+      <Link>HoloToolkit\Input\Scripts\Focus\IPointingSource.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\Focus\RegisterPointableCanvas.cs">
+      <Link>HoloToolkit\Input\Scripts\Focus\RegisterPointableCanvas.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\Focus\SimpleSinglePointerSelector.cs">
+      <Link>HoloToolkit\Input\Scripts\Focus\SimpleSinglePointerSelector.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\GameControllerManipulator.cs">
+      <Link>HoloToolkit\Input\Scripts\GameControllerManipulator.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\GamePad\XboxControllerData.cs">
+      <Link>HoloToolkit\Input\Scripts\GamePad\XboxControllerData.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\GamePad\XboxControllerHandlerBase.cs">
+      <Link>HoloToolkit\Input\Scripts\GamePad\XboxControllerHandlerBase.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\GamePad\XboxControllerMapping.cs">
+      <Link>HoloToolkit\Input\Scripts\GamePad\XboxControllerMapping.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\GamePad\XboxControllerMappingTypes.cs">
+      <Link>HoloToolkit\Input\Scripts\GamePad\XboxControllerMappingTypes.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\Gaze\BaseRayStabilizer.cs">
+      <Link>HoloToolkit\Input\Scripts\Gaze\BaseRayStabilizer.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\Gaze\GazeManager.cs">
+      <Link>HoloToolkit\Input\Scripts\Gaze\GazeManager.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\Gaze\GazeStabilizer.cs">
+      <Link>HoloToolkit\Input\Scripts\Gaze\GazeStabilizer.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\Gaze\MixedRealityTeleport.cs">
+      <Link>HoloToolkit\Input\Scripts\Gaze\MixedRealityTeleport.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\InputEventData\BaseInputEventData.cs">
+      <Link>HoloToolkit\Input\Scripts\InputEventData\BaseInputEventData.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\InputEventData\DictationEventData.cs">
+      <Link>HoloToolkit\Input\Scripts\InputEventData\DictationEventData.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\InputEventData\GamePadEventData.cs">
+      <Link>HoloToolkit\Input\Scripts\InputEventData\GamePadEventData.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\InputEventData\HoldEventData.cs">
+      <Link>HoloToolkit\Input\Scripts\InputEventData\HoldEventData.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\InputEventData\InputClickedEventData.cs">
+      <Link>HoloToolkit\Input\Scripts\InputEventData\InputClickedEventData.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\InputEventData\InputEventData.cs">
+      <Link>HoloToolkit\Input\Scripts\InputEventData\InputEventData.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\InputEventData\InputPositionEventData.cs">
+      <Link>HoloToolkit\Input\Scripts\InputEventData\InputPositionEventData.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\InputEventData\ManipulationEventData.cs">
+      <Link>HoloToolkit\Input\Scripts\InputEventData\ManipulationEventData.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\InputEventData\NavigationEventData.cs">
+      <Link>HoloToolkit\Input\Scripts\InputEventData\NavigationEventData.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\InputEventData\PointerInputEventData.cs">
+      <Link>HoloToolkit\Input\Scripts\InputEventData\PointerInputEventData.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\InputEventData\PointerSpecificEventData.cs">
+      <Link>HoloToolkit\Input\Scripts\InputEventData\PointerSpecificEventData.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\InputEventData\SelectPressedEventData.cs">
+      <Link>HoloToolkit\Input\Scripts\InputEventData\SelectPressedEventData.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\InputEventData\SourcePositionEventData.cs">
+      <Link>HoloToolkit\Input\Scripts\InputEventData\SourcePositionEventData.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\InputEventData\SourceRotationEventData.cs">
+      <Link>HoloToolkit\Input\Scripts\InputEventData\SourceRotationEventData.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\InputEventData\SourceStateEventData.cs">
+      <Link>HoloToolkit\Input\Scripts\InputEventData\SourceStateEventData.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\InputEventData\SpeechKeywordRecognizedEventData.cs">
+      <Link>HoloToolkit\Input\Scripts\InputEventData\SpeechKeywordRecognizedEventData.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\InputEventData\XboxControllerEventData.cs">
+      <Link>HoloToolkit\Input\Scripts\InputEventData\XboxControllerEventData.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\InputEvents\IControllerInputHandler.cs">
+      <Link>HoloToolkit\Input\Scripts\InputEvents\IControllerInputHandler.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\InputEvents\IControllerTouchpadHandler.cs">
+      <Link>HoloToolkit\Input\Scripts\InputEvents\IControllerTouchpadHandler.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\InputEvents\IPointerSpecificFocusable.cs">
+      <Link>HoloToolkit\Input\Scripts\InputEvents\IPointerSpecificFocusable.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\InputEvents\ISelectHandler.cs">
+      <Link>HoloToolkit\Input\Scripts\InputEvents\ISelectHandler.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\InputEvents\ISourcePositionHandler.cs">
+      <Link>HoloToolkit\Input\Scripts\InputEvents\ISourcePositionHandler.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\InputEvents\ISourceRotationHandler.cs">
+      <Link>HoloToolkit\Input\Scripts\InputEvents\ISourceRotationHandler.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\InputHandlers\IDictationHandler.cs">
+      <Link>HoloToolkit\Input\Scripts\InputHandlers\IDictationHandler.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\InputHandlers\IFocusable.cs">
+      <Link>HoloToolkit\Input\Scripts\InputHandlers\IFocusable.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\InputHandlers\IGamePadHandler.cs">
+      <Link>HoloToolkit\Input\Scripts\InputHandlers\IGamePadHandler.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\InputHandlers\IHoldHandler.cs">
+      <Link>HoloToolkit\Input\Scripts\InputHandlers\IHoldHandler.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\InputHandlers\IInputClickHandler.cs">
+      <Link>HoloToolkit\Input\Scripts\InputHandlers\IInputClickHandler.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\InputHandlers\IInputHandler.cs">
+      <Link>HoloToolkit\Input\Scripts\InputHandlers\IInputHandler.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\InputHandlers\IManipulationHandler.cs">
+      <Link>HoloToolkit\Input\Scripts\InputHandlers\IManipulationHandler.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\InputHandlers\INavigationHandler.cs">
+      <Link>HoloToolkit\Input\Scripts\InputHandlers\INavigationHandler.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\InputHandlers\ISourceStateHandler.cs">
+      <Link>HoloToolkit\Input\Scripts\InputHandlers\ISourceStateHandler.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\InputHandlers\ISpeechHandler.cs">
+      <Link>HoloToolkit\Input\Scripts\InputHandlers\ISpeechHandler.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\InputHandlers\IXboxControllerHandler.cs">
+      <Link>HoloToolkit\Input\Scripts\InputHandlers\IXboxControllerHandler.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\InputManager.cs">
+      <Link>HoloToolkit\Input\Scripts\InputManager.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\InputSources\BaseInputSource.cs">
+      <Link>HoloToolkit\Input\Scripts\InputSources\BaseInputSource.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\InputSources\EditorInputSource.cs">
+      <Link>HoloToolkit\Input\Scripts\InputSources\EditorInputSource.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\InputSources\GamepadInput.cs">
+      <Link>HoloToolkit\Input\Scripts\InputSources\GamepadInput.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\InputSources\GamePadInputSource.cs">
+      <Link>HoloToolkit\Input\Scripts\InputSources\GamePadInputSource.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\InputSources\IInputSource.cs">
+      <Link>HoloToolkit\Input\Scripts\InputSources\IInputSource.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\InputSources\InteractionSourceInputSource.cs">
+      <Link>HoloToolkit\Input\Scripts\InputSources\InteractionSourceInputSource.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\InputSources\SupportedInputInfo.cs">
+      <Link>HoloToolkit\Input\Scripts\InputSources\SupportedInputInfo.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\InputSources\XboxControllerInputSource.cs">
+      <Link>HoloToolkit\Input\Scripts\InputSources\XboxControllerInputSource.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\Interactions\HandDraggable.cs">
+      <Link>HoloToolkit\Input\Scripts\Interactions\HandDraggable.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\Interactions\TapToPlace.cs">
+      <Link>HoloToolkit\Input\Scripts\Interactions\TapToPlace.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\KeyboardManager.cs">
+      <Link>HoloToolkit\Input\Scripts\KeyboardManager.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\Microphone\DictationInputManager.cs">
+      <Link>HoloToolkit\Input\Scripts\Microphone\DictationInputManager.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\Microphone\MicStream.cs">
+      <Link>HoloToolkit\Input\Scripts\Microphone\MicStream.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\UI\TriggerButton.cs">
+      <Link>HoloToolkit\Input\Scripts\UI\TriggerButton.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\Utilities\AxisController.cs">
+      <Link>HoloToolkit\Input\Scripts\Utilities\AxisController.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\Utilities\ButtonController.cs">
+      <Link>HoloToolkit\Input\Scripts\Utilities\ButtonController.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\Utilities\EditorInputControl.cs">
+      <Link>HoloToolkit\Input\Scripts\Utilities\EditorInputControl.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\Utilities\HandGuidance.cs">
+      <Link>HoloToolkit\Input\Scripts\Utilities\HandGuidance.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\Utilities\InputSourceInfo.cs">
+      <Link>HoloToolkit\Input\Scripts\Utilities\InputSourceInfo.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\Utilities\ManualGazeControl.cs">
+      <Link>HoloToolkit\Input\Scripts\Utilities\ManualGazeControl.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\Utilities\MixedRealityCameraManager.cs">
+      <Link>HoloToolkit\Input\Scripts\Utilities\MixedRealityCameraManager.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\Utilities\SetGlobalListener.cs">
+      <Link>HoloToolkit\Input\Scripts\Utilities\SetGlobalListener.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\Voice\KeywordAndKeyCode.cs">
+      <Link>HoloToolkit\Input\Scripts\Voice\KeywordAndKeyCode.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\Voice\KeywordManager.cs">
+      <Link>HoloToolkit\Input\Scripts\Voice\KeywordManager.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\Voice\SpeechInputHandler.cs">
+      <Link>HoloToolkit\Input\Scripts\Voice\SpeechInputHandler.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Input\Scripts\Voice\SpeechInputSource.cs">
+      <Link>HoloToolkit\Input\Scripts\Voice\SpeechInputSource.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Playspace\Scripts\PlayspaceManager.cs">
+      <Link>HoloToolkit\Playspace\Scripts\PlayspaceManager.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\SpatialMapping\Scripts\ObjectSurfaceObserver.cs">
+      <Link>HoloToolkit\SpatialMapping\Scripts\ObjectSurfaceObserver.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\SpatialMapping\Scripts\RemoteMapping\FileSurfaceObserver.cs">
+      <Link>HoloToolkit\SpatialMapping\Scripts\RemoteMapping\FileSurfaceObserver.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\SpatialMapping\Scripts\RemoteMapping\MeshSaver.cs">
+      <Link>HoloToolkit\SpatialMapping\Scripts\RemoteMapping\MeshSaver.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\SpatialMapping\Scripts\RemoteMapping\RemoteMappingManager.cs">
+      <Link>HoloToolkit\SpatialMapping\Scripts\RemoteMapping\RemoteMappingManager.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\SpatialMapping\Scripts\RemoteMapping\RemoteMeshSource.cs">
+      <Link>HoloToolkit\SpatialMapping\Scripts\RemoteMapping\RemoteMeshSource.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\SpatialMapping\Scripts\RemoteMapping\RemoteMeshTarget.cs">
+      <Link>HoloToolkit\SpatialMapping\Scripts\RemoteMapping\RemoteMeshTarget.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\SpatialMapping\Scripts\RemoteMapping\SimpleMeshSerializer.cs">
+      <Link>HoloToolkit\SpatialMapping\Scripts\RemoteMapping\SimpleMeshSerializer.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\SpatialMapping\Scripts\SpatialMappingManager.cs">
+      <Link>HoloToolkit\SpatialMapping\Scripts\SpatialMappingManager.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\SpatialMapping\Scripts\SpatialMappingObserver.cs">
+      <Link>HoloToolkit\SpatialMapping\Scripts\SpatialMappingObserver.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\SpatialMapping\Scripts\SpatialMappingSource.cs">
+      <Link>HoloToolkit\SpatialMapping\Scripts\SpatialMappingSource.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\SpatialMapping\Scripts\SpatialProcessing\PlaneFinding.cs">
+      <Link>HoloToolkit\SpatialMapping\Scripts\SpatialProcessing\PlaneFinding.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\SpatialMapping\Scripts\SpatialProcessing\RemoveSurfaceVertices.cs">
+      <Link>HoloToolkit\SpatialMapping\Scripts\SpatialProcessing\RemoveSurfaceVertices.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\SpatialMapping\Scripts\SpatialProcessing\SurfaceMeshesToPlanes.cs">
+      <Link>HoloToolkit\SpatialMapping\Scripts\SpatialProcessing\SurfaceMeshesToPlanes.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\SpatialMapping\Scripts\SpatialProcessing\SurfacePlane.cs">
+      <Link>HoloToolkit\SpatialMapping\Scripts\SpatialProcessing\SurfacePlane.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\SpatialMapping\Scripts\TapToPlace.cs">
+      <Link>HoloToolkit\SpatialMapping\Scripts\TapToPlace.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\SpatialSound\AudioEmitter.cs">
+      <Link>HoloToolkit\SpatialSound\AudioEmitter.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\SpatialSound\AudioOccluder.cs">
+      <Link>HoloToolkit\SpatialSound\AudioOccluder.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\SpatialSound\IAudioInfluencer.cs">
+      <Link>HoloToolkit\SpatialSound\IAudioInfluencer.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\SpatialSound\UAudioManager\ActiveEvent.cs">
+      <Link>HoloToolkit\SpatialSound\UAudioManager\ActiveEvent.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\SpatialSound\UAudioManager\AudioContainer.cs">
+      <Link>HoloToolkit\SpatialSound\UAudioManager\AudioContainer.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\SpatialSound\UAudioManager\AudioEvent.cs">
+      <Link>HoloToolkit\SpatialSound\UAudioManager\AudioEvent.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\SpatialSound\UAudioManager\AudioSourcePlayClipExtension.cs">
+      <Link>HoloToolkit\SpatialSound\UAudioManager\AudioSourcePlayClipExtension.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\SpatialSound\UAudioManager\AudioSourcesReference.cs">
+      <Link>HoloToolkit\SpatialSound\UAudioManager\AudioSourcesReference.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\SpatialSound\UAudioManager\MiniAudioEvent.cs">
+      <Link>HoloToolkit\SpatialSound\UAudioManager\MiniAudioEvent.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\SpatialSound\UAudioManager\RTPC.cs">
+      <Link>HoloToolkit\SpatialSound\UAudioManager\RTPC.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\SpatialSound\UAudioManager\SpatialSoundSettings.cs">
+      <Link>HoloToolkit\SpatialSound\UAudioManager\SpatialSoundSettings.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\SpatialSound\UAudioManager\UAudioClip.cs">
+      <Link>HoloToolkit\SpatialSound\UAudioManager\UAudioClip.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\SpatialSound\UAudioManager\UAudioManager.cs">
+      <Link>HoloToolkit\SpatialSound\UAudioManager\UAudioManager.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\SpatialSound\UAudioManager\UAudioManagerBase.cs">
+      <Link>HoloToolkit\SpatialSound\UAudioManager\UAudioManagerBase.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\SpatialSound\UAudioManager\UAudioMiniManager.cs">
+      <Link>HoloToolkit\SpatialSound\UAudioManager\UAudioMiniManager.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\SpatialSound\UAudioManager\UAudioTrigger.cs">
+      <Link>HoloToolkit\SpatialSound\UAudioManager\UAudioTrigger.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\SpatialSound\UAudioManager\UPlayable.cs">
+      <Link>HoloToolkit\SpatialSound\UAudioManager\UPlayable.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\UI\Scripts\AxisSlider.cs">
+      <Link>HoloToolkit\UI\Scripts\AxisSlider.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\UI\Scripts\CapsLockHighlight.cs">
+      <Link>HoloToolkit\UI\Scripts\CapsLockHighlight.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\UI\Scripts\Keyboard.cs">
+      <Link>HoloToolkit\UI\Scripts\Keyboard.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\UI\Scripts\KeyboardInputField.cs">
+      <Link>HoloToolkit\UI\Scripts\KeyboardInputField.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\UI\Scripts\KeyboardKeyFunc.cs">
+      <Link>HoloToolkit\UI\Scripts\KeyboardKeyFunc.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\UI\Scripts\KeyboardValueKey.cs">
+      <Link>HoloToolkit\UI\Scripts\KeyboardValueKey.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\UI\Scripts\SliderInputField.cs">
+      <Link>HoloToolkit\UI\Scripts\SliderInputField.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\UI\Scripts\SymbolDisableHighlight.cs">
+      <Link>HoloToolkit\UI\Scripts\SymbolDisableHighlight.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\UI\Scripts\SymbolKeyboard.cs">
+      <Link>HoloToolkit\UI\Scripts\SymbolKeyboard.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\UI\Scripts\UICollection.cs">
+      <Link>HoloToolkit\UI\Scripts\UICollection.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\UI\Scripts\UsabilityScaler.cs">
+      <Link>HoloToolkit\UI\Scripts\UsabilityScaler.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\UI\Scripts\UsabilityUtilities.cs">
+      <Link>HoloToolkit\UI\Scripts\UsabilityUtilities.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\AdaptiveQuality\AdaptiveQuality.cs">
+      <Link>HoloToolkit\Utilities\Scripts\AdaptiveQuality\AdaptiveQuality.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\AdaptiveQuality\AdaptiveViewport.cs">
+      <Link>HoloToolkit\Utilities\Scripts\AdaptiveQuality\AdaptiveViewport.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\ApplicationViewManager.cs">
+      <Link>HoloToolkit\Utilities\Scripts\ApplicationViewManager.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\Attributes\OpenLocalFileAttribute.cs">
+      <Link>HoloToolkit\Utilities\Scripts\Attributes\OpenLocalFileAttribute.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\Attributes\OpenLocalFolderAttribute.cs">
+      <Link>HoloToolkit\Utilities\Scripts\Attributes\OpenLocalFolderAttribute.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\Attributes\SaveLocalFileAttribute.cs">
+      <Link>HoloToolkit\Utilities\Scripts\Attributes\SaveLocalFileAttribute.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\Billboard.cs">
+      <Link>HoloToolkit\Utilities\Scripts\Billboard.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\BitManipulator.cs">
+      <Link>HoloToolkit\Utilities\Scripts\BitManipulator.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\CameraCache.cs">
+      <Link>HoloToolkit\Utilities\Scripts\CameraCache.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\CircularBuffer.cs">
+      <Link>HoloToolkit\Utilities\Scripts\CircularBuffer.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\CrossPlatform\MetroHandleRef.cs">
+      <Link>HoloToolkit\Utilities\Scripts\CrossPlatform\MetroHandleRef.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\CrossPlatform\Reflection\ReflectionExtensions.cs">
+      <Link>HoloToolkit\Utilities\Scripts\CrossPlatform\Reflection\ReflectionExtensions.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\CrossPlatform\Reflection\TypeUtils.cs">
+      <Link>HoloToolkit\Utilities\Scripts\CrossPlatform\Reflection\TypeUtils.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\CrossPlatform\SystemException.cs">
+      <Link>HoloToolkit\Utilities\Scripts\CrossPlatform\SystemException.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\DataEventArgs.cs">
+      <Link>HoloToolkit\Utilities\Scripts\DataEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\DebugPanel.cs">
+      <Link>HoloToolkit\Utilities\Scripts\DebugPanel.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\DebugPanelControllerInfo.cs">
+      <Link>HoloToolkit\Utilities\Scripts\DebugPanelControllerInfo.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\DebugPanelFPSCounter.cs">
+      <Link>HoloToolkit\Utilities\Scripts\DebugPanelFPSCounter.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\DirectionIndicator.cs">
+      <Link>HoloToolkit\Utilities\Scripts\DirectionIndicator.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\DisplayDependentObjectActivator.cs">
+      <Link>HoloToolkit\Utilities\Scripts\DisplayDependentObjectActivator.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\Extensions\ActionExtensions.cs">
+      <Link>HoloToolkit\Utilities\Scripts\Extensions\ActionExtensions.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\Extensions\CameraExtensions.cs">
+      <Link>HoloToolkit\Utilities\Scripts\Extensions\CameraExtensions.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\Extensions\Color32Extensions.cs">
+      <Link>HoloToolkit\Utilities\Scripts\Extensions\Color32Extensions.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\Extensions\ComponentExtensions.cs">
+      <Link>HoloToolkit\Utilities\Scripts\Extensions\ComponentExtensions.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\Extensions\Extensions.cs">
+      <Link>HoloToolkit\Utilities\Scripts\Extensions\Extensions.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\Extensions\GameObjectExtensions.cs">
+      <Link>HoloToolkit\Utilities\Scripts\Extensions\GameObjectExtensions.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\Extensions\HapticsExtensions.cs">
+      <Link>HoloToolkit\Utilities\Scripts\Extensions\HapticsExtensions.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\Extensions\MathfExtensions.cs">
+      <Link>HoloToolkit\Utilities\Scripts\Extensions\MathfExtensions.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\Extensions\TransformExtensions.cs">
+      <Link>HoloToolkit\Utilities\Scripts\Extensions\TransformExtensions.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\Extensions\VectorExtensions.cs">
+      <Link>HoloToolkit\Utilities\Scripts\Extensions\VectorExtensions.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\FadeScript.cs">
+      <Link>HoloToolkit\Utilities\Scripts\FadeScript.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\FileSystemHelper.cs">
+      <Link>HoloToolkit\Utilities\Scripts\FileSystemHelper.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\FixedAngularSize.cs">
+      <Link>HoloToolkit\Utilities\Scripts\FixedAngularSize.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\FpsDisplay.cs">
+      <Link>HoloToolkit\Utilities\Scripts\FpsDisplay.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\GameObjectQueue.cs">
+      <Link>HoloToolkit\Utilities\Scripts\GameObjectQueue.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\GLTF\Scripts\AsyncAction.cs">
+      <Link>HoloToolkit\Utilities\Scripts\GLTF\Scripts\AsyncAction.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\GLTF\Scripts\Exceptions.cs">
+      <Link>HoloToolkit\Utilities\Scripts\GLTF\Scripts\Exceptions.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\GLTF\Scripts\GLTFComponent.cs">
+      <Link>HoloToolkit\Utilities\Scripts\GLTF\Scripts\GLTFComponent.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\GLTF\Scripts\GLTFJsonExtensions.cs">
+      <Link>HoloToolkit\Utilities\Scripts\GLTF\Scripts\GLTFJsonExtensions.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\GLTF\Scripts\GLTFLoader.cs">
+      <Link>HoloToolkit\Utilities\Scripts\GLTF\Scripts\GLTFLoader.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\GLTF\Scripts\GLTFParser.cs">
+      <Link>HoloToolkit\Utilities\Scripts\GLTF\Scripts\GLTFParser.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\Accessor.cs">
+      <Link>HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\Accessor.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\AccessorSparse.cs">
+      <Link>HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\AccessorSparse.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\AccessorSparseIndices.cs">
+      <Link>HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\AccessorSparseIndices.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\AccessorSparseValues.cs">
+      <Link>HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\AccessorSparseValues.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\AnimationChannel.cs">
+      <Link>HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\AnimationChannel.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\AnimationChannelTarget.cs">
+      <Link>HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\AnimationChannelTarget.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\AnimationSampler.cs">
+      <Link>HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\AnimationSampler.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\Asset.cs">
+      <Link>HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\Asset.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\Buffer.cs">
+      <Link>HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\Buffer.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\BufferView.cs">
+      <Link>HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\BufferView.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\CameraOrthographic.cs">
+      <Link>HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\CameraOrthographic.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\CameraPerspective.cs">
+      <Link>HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\CameraPerspective.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\Extension.cs">
+      <Link>HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\Extension.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\GLTFAnimation.cs">
+      <Link>HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\GLTFAnimation.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\GLTFCamera.cs">
+      <Link>HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\GLTFCamera.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\GLTFChildOfRootProperty.cs">
+      <Link>HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\GLTFChildOfRootProperty.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\GLTFId.cs">
+      <Link>HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\GLTFId.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\GLTFProperty.cs">
+      <Link>HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\GLTFProperty.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\GLTFRoot.cs">
+      <Link>HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\GLTFRoot.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\Image.cs">
+      <Link>HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\Image.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\Material.cs">
+      <Link>HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\Material.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\MaterialCommonConstant.cs">
+      <Link>HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\MaterialCommonConstant.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\MaterialNormalTextureInfo.cs">
+      <Link>HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\MaterialNormalTextureInfo.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\MaterialOcclusionTextureInfo.cs">
+      <Link>HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\MaterialOcclusionTextureInfo.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\MaterialPBRMetallicRoughness.cs">
+      <Link>HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\MaterialPBRMetallicRoughness.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\Mesh.cs">
+      <Link>HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\Mesh.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\MeshPrimitive.cs">
+      <Link>HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\MeshPrimitive.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\Node.cs">
+      <Link>HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\Node.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\Sampler.cs">
+      <Link>HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\Sampler.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\Scene.cs">
+      <Link>HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\Scene.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\Skin.cs">
+      <Link>HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\Skin.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\Texture.cs">
+      <Link>HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\Texture.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\TextureInfo.cs">
+      <Link>HoloToolkit\Utilities\Scripts\GLTF\Scripts\Schema\TextureInfo.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\GLTFComponentStreamingAssets.cs">
+      <Link>HoloToolkit\Utilities\Scripts\GLTFComponentStreamingAssets.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\GpuTiming\GpuTiming.cs">
+      <Link>HoloToolkit\Utilities\Scripts\GpuTiming\GpuTiming.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\GpuTiming\GpuTimingCamera.cs">
+      <Link>HoloToolkit\Utilities\Scripts\GpuTiming\GpuTimingCamera.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\HashCodes.cs">
+      <Link>HoloToolkit\Utilities\Scripts\HashCodes.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\HeadsetAdjustment.cs">
+      <Link>HoloToolkit\Utilities\Scripts\HeadsetAdjustment.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\HeadsUpDirectionIndicator.cs">
+      <Link>HoloToolkit\Utilities\Scripts\HeadsUpDirectionIndicator.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\Int3.cs">
+      <Link>HoloToolkit\Utilities\Scripts\Int3.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\InterpolatedValues\InterpolatedColor.cs">
+      <Link>HoloToolkit\Utilities\Scripts\InterpolatedValues\InterpolatedColor.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\InterpolatedValues\InterpolatedFloat.cs">
+      <Link>HoloToolkit\Utilities\Scripts\InterpolatedValues\InterpolatedFloat.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\InterpolatedValues\InterpolatedQuaternion.cs">
+      <Link>HoloToolkit\Utilities\Scripts\InterpolatedValues\InterpolatedQuaternion.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\InterpolatedValues\InterpolatedValue.cs">
+      <Link>HoloToolkit\Utilities\Scripts\InterpolatedValues\InterpolatedValue.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\InterpolatedValues\InterpolatedVector2.cs">
+      <Link>HoloToolkit\Utilities\Scripts\InterpolatedValues\InterpolatedVector2.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\InterpolatedValues\InterpolatedVector3.cs">
+      <Link>HoloToolkit\Utilities\Scripts\InterpolatedValues\InterpolatedVector3.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\InterpolatedValues\QuaternionInterpolated.cs">
+      <Link>HoloToolkit\Utilities\Scripts\InterpolatedValues\QuaternionInterpolated.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\InterpolatedValues\Vector3Interpolated.cs">
+      <Link>HoloToolkit\Utilities\Scripts\InterpolatedValues\Vector3Interpolated.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\InterpolationUtilities.cs">
+      <Link>HoloToolkit\Utilities\Scripts\InterpolationUtilities.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\Interpolator.cs">
+      <Link>HoloToolkit\Utilities\Scripts\Interpolator.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\MathUtils.cs">
+      <Link>HoloToolkit\Utilities\Scripts\MathUtils.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\NearPlaneFade.cs">
+      <Link>HoloToolkit\Utilities\Scripts\NearPlaneFade.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\PriorityQueue.cs">
+      <Link>HoloToolkit\Utilities\Scripts\PriorityQueue.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\PropertyChangedEventArgsEx.cs">
+      <Link>HoloToolkit\Utilities\Scripts\PropertyChangedEventArgsEx.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\ReadOnlyHashSet.cs">
+      <Link>HoloToolkit\Utilities\Scripts\ReadOnlyHashSet.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\SceneLauncher.cs">
+      <Link>HoloToolkit\Utilities\Scripts\SceneLauncher.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\SceneLauncherButton.cs">
+      <Link>HoloToolkit\Utilities\Scripts\SceneLauncherButton.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\SimpleTagalong.cs">
+      <Link>HoloToolkit\Utilities\Scripts\SimpleTagalong.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\SingleInstance.cs">
+      <Link>HoloToolkit\Utilities\Scripts\SingleInstance.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\Singleton.cs">
+      <Link>HoloToolkit\Utilities\Scripts\Singleton.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\SphereBasedTagalong.cs">
+      <Link>HoloToolkit\Utilities\Scripts\SphereBasedTagalong.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\StabilizationPlaneModifier.cs">
+      <Link>HoloToolkit\Utilities\Scripts\StabilizationPlaneModifier.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\StartAwareBehaviour.cs">
+      <Link>HoloToolkit\Utilities\Scripts\StartAwareBehaviour.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\StartAwareSingleton.cs">
+      <Link>HoloToolkit\Utilities\Scripts\StartAwareSingleton.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\Tagalong.cs">
+      <Link>HoloToolkit\Utilities\Scripts\Tagalong.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\TextToSpeech.cs">
+      <Link>HoloToolkit\Utilities\Scripts\TextToSpeech.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\Timer.cs">
+      <Link>HoloToolkit\Utilities\Scripts\Timer.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\TimerScheduler.cs">
+      <Link>HoloToolkit\Utilities\Scripts\TimerScheduler.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\ToggleDebugWindow.cs">
+      <Link>HoloToolkit\Utilities\Scripts\ToggleDebugWindow.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\Utils.cs">
+      <Link>HoloToolkit\Utilities\Scripts\Utils.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\VectorRollingStatistics.cs">
+      <Link>HoloToolkit\Utilities\Scripts\VectorRollingStatistics.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\WorldAnchorManager.cs">
+      <Link>HoloToolkit\Utilities\Scripts\WorldAnchorManager.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Shaders\FastConfigurable\Scripts\CalibrationSpace.cs">
+      <Link>HoloToolkit\Utilities\Shaders\FastConfigurable\Scripts\CalibrationSpace.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Tests\Scripts\GestureResponder.cs">
+      <Link>HoloToolkit\Utilities\Tests\Scripts\GestureResponder.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Tests\Scripts\PlaneTargetGroup.cs">
+      <Link>HoloToolkit\Utilities\Tests\Scripts\PlaneTargetGroup.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Tests\Scripts\PlaneTargetGroupPicker.cs">
+      <Link>HoloToolkit\Utilities\Tests\Scripts\PlaneTargetGroupPicker.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\RequireAllPathsButton.cs">
+      <Link>RequireAllPathsButton.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+    <PropertyGroup>
+    <TargetsTriggeredByCompilation>$(TargetsTriggeredByCompilation);RunSerializationWeaver</TargetsTriggeredByCompilation>
+  </PropertyGroup>
+  <Target Name="RunSerializationWeaver" Condition="'$(BuildingProject)' == 'true'">
+    <Message Importance="high" Text="Running SerializationWeaver..." />
+    <Move SourceFiles="@(IntermediateAssembly)" DestinationFolder="$(TargetDir)Unprocessed" OverwriteReadOnlyFiles="true" />
+    <Move SourceFiles="@(IntermediateAssembly-&gt;'%(RelativeDir)%(Filename).pdb')" DestinationFolder="$(TargetDir)Unprocessed" Condition="Exists('@(IntermediateAssembly-&gt;'%(RelativeDir)%(Filename).pdb')')" OverwriteReadOnlyFiles="true" />
+    <Exec Command="&quot;$(UnityWSAToolsDir)SerializationWeaver\SerializationWeaver.exe&quot; &quot;$(TargetDir)Unprocessed\$(TargetFileName)&quot; &quot;-pdb&quot; &quot;-verbose&quot; &quot;-unity-engine=$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.CoreModule.dll&quot; &quot;$([System.IO.Path]::GetFullPath('$(IntermediateOutputPath)').TrimEnd('\'))&quot; &quot;-lock=$([System.IO.Path]::Combine('$(ProjectDir)', 'project.lock.json'))&quot; &quot;@C:\Users\Nathan Yu\Documents\GitHub\Hololens\Hologram250\App\GeneratedProjects\UWP\Assembly-CSharp\SerializationWeaverArgs.txt&quot; &quot;-additionalAssemblyPath=$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed&quot; &quot;-unity-networking=$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.Networking.dll&quot; &quot;-additionalAssemblyPath=$(UnityWSASolutionDir)GeneratedProjects\UWP\Assembly-CSharp-firstpass\bin\$(PlatformName)\$(ConfigurationName)&quot;" />
+    <Message Importance="high" Text="SerializationWeaver done." />
+  </Target>
+  <PropertyGroup>
+    <CleanDependsOn>$(CleanDependsOn);CleanSerializationWeaver</CleanDependsOn>
+  </PropertyGroup>
+  <Target Name="CleanSerializationWeaver">
+    <Delete Files="$(TargetDir)Unprocessed\$(TargetFileName)" />
+    <Delete Files="$(TargetDir)Unprocessed\$(TargetName).pdb" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

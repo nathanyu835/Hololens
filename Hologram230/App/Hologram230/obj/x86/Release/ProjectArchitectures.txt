@@ -1,0 +1,4 @@
+C:\Hololens\Hologram230\App\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj;x86
+C:\Hololens\Hologram230\App\GeneratedProjects\UWP\Assembly-CSharp-firstpass\Assembly-CSharp-firstpass.csproj;x86
+C:\Hololens\Hologram230\App\GeneratedProjects\UWP\Assembly-CSharp-firstpass\Assembly-CSharp-firstpass.csproj;x86
+C:\Hololens\Hologram230\App\Hologram230\Hologram230.csproj;x86
