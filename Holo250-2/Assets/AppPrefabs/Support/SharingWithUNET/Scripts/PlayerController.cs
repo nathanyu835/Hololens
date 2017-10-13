@@ -269,12 +269,12 @@ namespace HoloToolkit.Examples.SharingWithUNET
         [Command]
         public void CmdRequestPathIndex()
         {
-            PathIndex = levelState.FindOpenPath();
+            PathIndex = 1;
         }
 
         private bool WaitingForFreePath = false;
 
-        LevelControl levelState;
+        ProspectControl levelState;
 
         NetworkDiscoveryWithAnchors networkDiscovery;
 
@@ -300,7 +300,7 @@ namespace HoloToolkit.Examples.SharingWithUNET
             fadeControl = FadeScript.Instance;
             networkDiscovery = NetworkDiscoveryWithAnchors.Instance;
             anchorManager = UNetAnchorManager.Instance;
-            levelState = LevelControl.Instance;
+            levelState = ProspectControl.Instance;
             allPlayers.Add(this);
         }
 
@@ -597,7 +597,7 @@ namespace HoloToolkit.Examples.SharingWithUNET
                     return;
                 }
 
-                lineRend.startWidth = levelState.Immersed ? .01f * LevelControl.ImmersiveScale : .01f;
+                lineRend.startWidth = levelState.Immersed ? .01f * ProspectControl.ImmersiveScale : .01f;
                 if (isLocalPlayer)
                 {
                     lineRend.startWidth *= levelState.Immersed ? 0.1f : 1;
@@ -704,20 +704,20 @@ namespace HoloToolkit.Examples.SharingWithUNET
             }
         }
 
-        [Command]
-        private void CmdSendAtGoal(int GoalIndex)
-        {
-            levelState.SetGoalIndex(GoalIndex);
-        }
-
-        public void SendAtGoal(int GoalIndex)
-        {
-            if (isLocalPlayer)
-            {
-                Debug.Log("sending at goal " + GoalIndex);
-                CmdSendAtGoal(GoalIndex);
-            }
-        }
+//        [Command]
+//        private void CmdSendAtGoal(int GoalIndex)
+//        {
+//            levelState.SetGoalIndex(GoalIndex);
+//        }
+//
+//        public void SendAtGoal(int GoalIndex)
+//        {
+//            if (isLocalPlayer)
+//            {
+//                Debug.Log("sending at goal " + GoalIndex);
+//                CmdSendAtGoal(GoalIndex);
+//            }
+//        }
 
         [Command(channel = 1)]
         private void CmdSendImmersedPosition(string PlayerName, Vector3 levelPosition, Quaternion levelRotation)
@@ -733,20 +733,20 @@ namespace HoloToolkit.Examples.SharingWithUNET
             }
         }
 
-        [Command]
-        public void CmdSendPuzzleSolved(int PuzzleIndex)
-        {
-            Debug.Log("CmdPuzzle solved");
-            levelState.RpcPuzzleSolved(PuzzleIndex);
-        }
-
-        public void SendPuzzleSolved(int PuzzleIndex)
-        {
-            if (isLocalPlayer)
-            {
-                Debug.Log("Puzzle solved");
-                CmdSendPuzzleSolved(PuzzleIndex);
-            }
-        }
+//        [Command]
+//        public void CmdSendPuzzleSolved(int PuzzleIndex)
+//        {
+//            Debug.Log("CmdPuzzle solved");
+//            levelState.RpcPuzzleSolved(PuzzleIndex);
+//        }
+//
+//        public void SendPuzzleSolved(int PuzzleIndex)
+//        {
+//            if (isLocalPlayer)
+//            {
+//                Debug.Log("Puzzle solved");
+//                CmdSendPuzzleSolved(PuzzleIndex);
+//            }
+//        }
     }
 }

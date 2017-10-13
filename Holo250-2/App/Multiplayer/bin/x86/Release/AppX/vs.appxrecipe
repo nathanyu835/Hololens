@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\bin\x86\Release\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-10-13T16:07:29.878</Modified>
+      <Modified>2017-10-13T18:26:14.567</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\bin\x86\Release\Multiplayer.exe">
       <PackagePath>entrypoint\Multiplayer.exe</PackagePath>
-      <Modified>2017-10-13T16:07:16.323</Modified>
+      <Modified>2017-10-13T18:26:00.755</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\.nuget\packages\Microsoft.ApplicationInsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -501,7 +501,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\Resource.res">
       <PackagePath>Resource.res</PackagePath>
-      <Modified>2017-10-13T16:03:41.232</Modified>
+      <Modified>2017-10-13T18:24:51.883</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
@@ -551,15 +551,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\Data\boot.config">
       <PackagePath>Data\boot.config</PackagePath>
-      <Modified>2017-10-13T16:03:04.775</Modified>
+      <Modified>2017-10-13T18:24:12.236</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\Data\globalgamemanagers">
       <PackagePath>Data\globalgamemanagers</PackagePath>
-      <Modified>2017-10-13T16:03:02.797</Modified>
+      <Modified>2017-10-13T18:24:09.057</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\Data\level0">
       <PackagePath>Data\level0</PackagePath>
-      <Modified>2017-10-13T16:03:01.572</Modified>
+      <Modified>2017-10-13T18:24:07.610</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\Data\Resources\unity default resources">
       <PackagePath>Data\Resources\unity default resources</PackagePath>
@@ -567,39 +567,39 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\Data\Resources\unity_builtin_extra">
       <PackagePath>Data\Resources\unity_builtin_extra</PackagePath>
-      <Modified>2017-10-13T16:03:04.773</Modified>
+      <Modified>2017-10-13T18:24:12.234</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\Data\globalgamemanagers.assets">
       <PackagePath>Data\globalgamemanagers.assets</PackagePath>
-      <Modified>2017-10-13T16:03:02.953</Modified>
+      <Modified>2017-10-13T18:24:09.230</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\Data\resources.assets">
       <PackagePath>Data\resources.assets</PackagePath>
-      <Modified>2017-10-13T16:03:02.976</Modified>
+      <Modified>2017-10-13T18:24:09.252</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\Data\sharedassets0.assets">
       <PackagePath>Data\sharedassets0.assets</PackagePath>
-      <Modified>2017-10-13T16:03:04.480</Modified>
+      <Modified>2017-10-13T18:24:11.888</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\Data\level0.resS">
       <PackagePath>Data\level0.resS</PackagePath>
-      <Modified>2017-10-13T16:03:01.564</Modified>
+      <Modified>2017-10-13T18:24:07.602</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\Data\sharedassets0.assets.resS">
       <PackagePath>Data\sharedassets0.assets.resS</PackagePath>
-      <Modified>2017-10-13T16:03:04.470</Modified>
+      <Modified>2017-10-13T18:24:11.851</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\Data\managedAssemblies.txt">
       <PackagePath>Data\managedAssemblies.txt</PackagePath>
-      <Modified>2017-10-13T16:03:41.104</Modified>
+      <Modified>2017-10-13T18:24:51.831</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\Data\nativePlugins.txt">
       <PackagePath>Data\nativePlugins.txt</PackagePath>
-      <Modified>2017-10-13T16:03:41.108</Modified>
+      <Modified>2017-10-13T18:24:51.835</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\Data\sharedassets0.resource">
       <PackagePath>Data\sharedassets0.resource</PackagePath>
-      <Modified>2017-10-13T16:03:04.489</Modified>
+      <Modified>2017-10-13T18:24:11.902</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -608,211 +608,211 @@
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\bin\x86\Release\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-10-13T16:07:17.228</Modified>
+      <Modified>2017-10-13T18:26:01.560</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\UnityEngine.TilemapModule.dll">
       <PackagePath>UnityEngine.TilemapModule.dll</PackagePath>
-      <Modified>2017-10-13T16:07:25.627</Modified>
+      <Modified>2017-10-13T18:26:10.073</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\UnityEngine.TextRenderingModule.dll">
       <PackagePath>UnityEngine.TextRenderingModule.dll</PackagePath>
-      <Modified>2017-10-13T16:07:25.661</Modified>
+      <Modified>2017-10-13T18:26:10.094</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\UnityEngine.UIModule.dll">
       <PackagePath>UnityEngine.UIModule.dll</PackagePath>
-      <Modified>2017-10-13T16:07:25.681</Modified>
+      <Modified>2017-10-13T18:26:10.112</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\UnityEngine.UIElementsModule.dll">
       <PackagePath>UnityEngine.UIElementsModule.dll</PackagePath>
-      <Modified>2017-10-13T16:07:25.712</Modified>
+      <Modified>2017-10-13T18:26:10.147</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\UnityEngine.SpriteMaskModule.dll">
       <PackagePath>UnityEngine.SpriteMaskModule.dll</PackagePath>
-      <Modified>2017-10-13T16:07:25.731</Modified>
+      <Modified>2017-10-13T18:26:10.162</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\UnityEngine.ScreenCaptureModule.dll">
       <PackagePath>UnityEngine.ScreenCaptureModule.dll</PackagePath>
-      <Modified>2017-10-13T16:07:25.745</Modified>
+      <Modified>2017-10-13T18:26:10.176</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\UnityEngine.PhysicsModule.dll">
       <PackagePath>UnityEngine.PhysicsModule.dll</PackagePath>
-      <Modified>2017-10-13T16:07:25.766</Modified>
+      <Modified>2017-10-13T18:26:10.197</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\UnityEngine.TerrainPhysicsModule.dll">
       <PackagePath>UnityEngine.TerrainPhysicsModule.dll</PackagePath>
-      <Modified>2017-10-13T16:07:25.781</Modified>
+      <Modified>2017-10-13T18:26:10.211</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\UnityEngine.TerrainModule.dll">
       <PackagePath>UnityEngine.TerrainModule.dll</PackagePath>
-      <Modified>2017-10-13T16:07:25.804</Modified>
+      <Modified>2017-10-13T18:26:10.231</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\UnityEngine.StyleSheetsModule.dll">
       <PackagePath>UnityEngine.StyleSheetsModule.dll</PackagePath>
-      <Modified>2017-10-13T16:07:25.822</Modified>
+      <Modified>2017-10-13T18:26:10.250</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\UnityEngine.UNETModule.dll">
       <PackagePath>UnityEngine.UNETModule.dll</PackagePath>
-      <Modified>2017-10-13T16:07:25.845</Modified>
+      <Modified>2017-10-13T18:26:10.273</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\UnityEngine.VRModule.dll">
       <PackagePath>UnityEngine.VRModule.dll</PackagePath>
-      <Modified>2017-10-13T16:07:25.871</Modified>
+      <Modified>2017-10-13T18:26:10.302</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\UnityEngine.VideoModule.dll">
       <PackagePath>UnityEngine.VideoModule.dll</PackagePath>
-      <Modified>2017-10-13T16:07:25.889</Modified>
+      <Modified>2017-10-13T18:26:10.321</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\UnityEngine.VehiclesModule.dll">
       <PackagePath>UnityEngine.VehiclesModule.dll</PackagePath>
-      <Modified>2017-10-13T16:07:25.903</Modified>
+      <Modified>2017-10-13T18:26:10.336</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\UnityEngine.WindModule.dll">
       <PackagePath>UnityEngine.WindModule.dll</PackagePath>
-      <Modified>2017-10-13T16:07:25.917</Modified>
+      <Modified>2017-10-13T18:26:10.350</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\UnityEngine.WebModule.dll">
       <PackagePath>UnityEngine.WebModule.dll</PackagePath>
-      <Modified>2017-10-13T16:07:25.936</Modified>
+      <Modified>2017-10-13T18:26:10.373</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\UnityEngine.UnityWebRequestAudioModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestAudioModule.dll</PackagePath>
-      <Modified>2017-10-13T16:07:25.952</Modified>
+      <Modified>2017-10-13T18:26:10.390</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\UnityEngine.UnityConnectModule.dll">
       <PackagePath>UnityEngine.UnityConnectModule.dll</PackagePath>
-      <Modified>2017-10-13T16:07:25.967</Modified>
+      <Modified>2017-10-13T18:26:10.405</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\UnityEngine.UnityAnalyticsModule.dll">
       <PackagePath>UnityEngine.UnityAnalyticsModule.dll</PackagePath>
-      <Modified>2017-10-13T16:07:25.987</Modified>
+      <Modified>2017-10-13T18:26:10.422</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\UnityEngine.UnityWebRequestWWWModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestWWWModule.dll</PackagePath>
-      <Modified>2017-10-13T16:07:26.007</Modified>
+      <Modified>2017-10-13T18:26:10.437</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\UnityEngine.UnityWebRequestTextureModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestTextureModule.dll</PackagePath>
-      <Modified>2017-10-13T16:07:26.021</Modified>
+      <Modified>2017-10-13T18:26:10.452</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\UnityEngine.UnityWebRequestModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestModule.dll</PackagePath>
-      <Modified>2017-10-13T16:07:26.041</Modified>
+      <Modified>2017-10-13T18:26:10.471</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\UnityEngine.Physics2DModule.dll">
       <PackagePath>UnityEngine.Physics2DModule.dll</PackagePath>
-      <Modified>2017-10-13T16:07:26.063</Modified>
+      <Modified>2017-10-13T18:26:10.495</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\UnityEngine.AudioModule.dll">
       <PackagePath>UnityEngine.AudioModule.dll</PackagePath>
-      <Modified>2017-10-13T16:07:26.084</Modified>
+      <Modified>2017-10-13T18:26:10.516</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\UnityEngine.ARModule.dll">
       <PackagePath>UnityEngine.ARModule.dll</PackagePath>
-      <Modified>2017-10-13T16:07:26.101</Modified>
+      <Modified>2017-10-13T18:26:10.533</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\UnityEngine.AnimationModule.dll">
       <PackagePath>UnityEngine.AnimationModule.dll</PackagePath>
-      <Modified>2017-10-13T16:07:26.124</Modified>
+      <Modified>2017-10-13T18:26:10.555</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\UnityEngine.CrashReportingModule.dll">
       <PackagePath>UnityEngine.CrashReportingModule.dll</PackagePath>
-      <Modified>2017-10-13T16:07:26.137</Modified>
+      <Modified>2017-10-13T18:26:10.570</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\UnityEngine.CoreModule.dll">
       <PackagePath>UnityEngine.CoreModule.dll</PackagePath>
-      <Modified>2017-10-13T16:07:26.350</Modified>
+      <Modified>2017-10-13T18:26:10.788</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\UnityEngine.ClothModule.dll">
       <PackagePath>UnityEngine.ClothModule.dll</PackagePath>
-      <Modified>2017-10-13T16:07:26.365</Modified>
+      <Modified>2017-10-13T18:26:10.803</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\UnityEngine.AIModule.dll">
       <PackagePath>UnityEngine.AIModule.dll</PackagePath>
-      <Modified>2017-10-13T16:07:26.382</Modified>
+      <Modified>2017-10-13T18:26:10.821</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\UnityEngine.AccessibilityModule.dll">
       <PackagePath>UnityEngine.AccessibilityModule.dll</PackagePath>
-      <Modified>2017-10-13T16:07:26.396</Modified>
+      <Modified>2017-10-13T18:26:10.834</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\UnityEngine.DirectorModule.dll">
       <PackagePath>UnityEngine.DirectorModule.dll</PackagePath>
-      <Modified>2017-10-13T16:07:26.411</Modified>
+      <Modified>2017-10-13T18:26:10.849</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\UnityEngine.JSONSerializeModule.dll">
       <PackagePath>UnityEngine.JSONSerializeModule.dll</PackagePath>
-      <Modified>2017-10-13T16:07:26.424</Modified>
+      <Modified>2017-10-13T18:26:10.862</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\UnityEngine.InputModule.dll">
       <PackagePath>UnityEngine.InputModule.dll</PackagePath>
-      <Modified>2017-10-13T16:07:26.440</Modified>
+      <Modified>2017-10-13T18:26:10.877</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\UnityEngine.PerformanceReportingModule.dll">
       <PackagePath>UnityEngine.PerformanceReportingModule.dll</PackagePath>
-      <Modified>2017-10-13T16:07:26.454</Modified>
+      <Modified>2017-10-13T18:26:10.891</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\UnityEngine.ParticleSystemModule.dll">
       <PackagePath>UnityEngine.ParticleSystemModule.dll</PackagePath>
-      <Modified>2017-10-13T16:07:26.483</Modified>
+      <Modified>2017-10-13T18:26:10.915</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\UnityEngine.ParticlesLegacyModule.dll">
       <PackagePath>UnityEngine.ParticlesLegacyModule.dll</PackagePath>
-      <Modified>2017-10-13T16:07:26.499</Modified>
+      <Modified>2017-10-13T18:26:10.932</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\UnityEngine.GridModule.dll">
       <PackagePath>UnityEngine.GridModule.dll</PackagePath>
-      <Modified>2017-10-13T16:07:26.514</Modified>
+      <Modified>2017-10-13T18:26:10.946</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\UnityEngine.GameCenterModule.dll">
       <PackagePath>UnityEngine.GameCenterModule.dll</PackagePath>
-      <Modified>2017-10-13T16:07:26.531</Modified>
+      <Modified>2017-10-13T18:26:10.963</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\UnityEngine.dll">
       <PackagePath>UnityEngine.dll</PackagePath>
-      <Modified>2017-10-13T16:03:26.318</Modified>
+      <Modified>2017-10-13T18:24:35.461</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\UnityEngine.IMGUIModule.dll">
       <PackagePath>UnityEngine.IMGUIModule.dll</PackagePath>
-      <Modified>2017-10-13T16:07:26.557</Modified>
+      <Modified>2017-10-13T18:26:10.991</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\UnityEngine.ImageConversionModule.dll">
       <PackagePath>UnityEngine.ImageConversionModule.dll</PackagePath>
-      <Modified>2017-10-13T16:07:26.571</Modified>
+      <Modified>2017-10-13T18:26:11.005</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
-      <Modified>2017-10-13T16:07:26.624</Modified>
+      <Modified>2017-10-13T18:26:11.058</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\UnityEngine.Timeline.dll">
       <PackagePath>UnityEngine.Timeline.dll</PackagePath>
-      <Modified>2017-10-13T16:07:26.660</Modified>
+      <Modified>2017-10-13T18:26:11.094</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\nunit.framework.dll">
       <PackagePath>nunit.framework.dll</PackagePath>
-      <Modified>2017-10-13T16:07:26.699</Modified>
+      <Modified>2017-10-13T18:26:11.135</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\UnityEngine.UI.dll">
       <PackagePath>UnityEngine.UI.dll</PackagePath>
-      <Modified>2017-10-13T16:07:26.793</Modified>
+      <Modified>2017-10-13T18:26:11.209</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\UnityEngine.HoloLens.dll">
       <PackagePath>UnityEngine.HoloLens.dll</PackagePath>
-      <Modified>2017-10-13T16:07:26.817</Modified>
+      <Modified>2017-10-13T18:26:11.234</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\UnityEngine.Networking.dll">
       <PackagePath>UnityEngine.Networking.dll</PackagePath>
-      <Modified>2017-10-13T16:07:26.877</Modified>
+      <Modified>2017-10-13T18:26:11.295</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\Assembly-CSharp.dll">
       <PackagePath>Assembly-CSharp.dll</PackagePath>
-      <Modified>2017-10-13T16:07:25.608</Modified>
+      <Modified>2017-10-13T18:26:10.052</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\Assembly-CSharp-firstpass.dll">
       <PackagePath>Assembly-CSharp-firstpass.dll</PackagePath>
-      <Modified>2017-10-13T16:07:25.451</Modified>
+      <Modified>2017-10-13T18:26:09.900</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan Yu\Documents\GitHub\Hololens\Holo250-2\App\Multiplayer\bin\x86\Release\Core\Multiplayer.exe">
       <PackagePath>Multiplayer.exe</PackagePath>
-      <Modified>2017-10-13T16:07:29.872</Modified>
+      <Modified>2017-10-13T18:26:14.551</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

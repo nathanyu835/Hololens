@@ -429,7 +429,7 @@ public class LevelControl : NetworkBehaviour
             if (puzzleInterface.Solved)
             {
                 // Let everyone know
-                playerController.SendPuzzleSolved(onPathIndex);
+//                playerController.SendPuzzleSolved(onPathIndex);
                 // And don't send the completion again.
                 sentPuzzleComplete = true;
             }
@@ -483,7 +483,7 @@ public class LevelControl : NetworkBehaviour
         if (onPathIndex >= 0 && onPathIndex < AtGoal.Count && playerController != null)
         {
             sentGoalComplete = true;
-            playerController.SendAtGoal(onPathIndex);
+//            playerController.SendAtGoal(onPathIndex);
         }
         else
         {
@@ -741,7 +741,7 @@ public class LevelControl : NetworkBehaviour
         if (!RequireAllPaths)
         {
             int NumImmersed = 0;
-            foreach(var player in HoloToolkit.Examples.SharingWithUNET.PlayerController.allPlayers)
+            foreach (var player in HoloToolkit.Examples.SharingWithUNET.PlayerController.allPlayers)
             {
                 if (player.SharesSpatialAnchors == false)
                 {
@@ -856,14 +856,14 @@ public class LevelControl : NetworkBehaviour
         // First initialize options to be the same as 'atgoal' which tracks 
         // which paths are complete.
         bool[] options = new bool[AtGoal.Count];
-        
+
 
         for (int index = 0; index < AtGoal.Count; index++)
         {
             options[index] = AtGoal[index];
         }
 
-        
+
         // Then we need to check all of the current players to see which paths 
         // people are on.  We will set the options for their path index to be true
         foreach (KeyValuePair<string, LevelPlayerStateData> lpsd in systemIdToPlayerState)
@@ -885,7 +885,7 @@ public class LevelControl : NetworkBehaviour
                 }
             }
         }
-        else if(options.Length > 0)
+        else if (options.Length > 0)
         {
             List<int> validOptions = new List<int>();
             for (int index = 0; index < options.Length; index++)
@@ -927,8 +927,8 @@ public class LevelControl : NetworkBehaviour
 
                     UAudioManager.Instance.PlayEvent("Teleport");
 
-                  //  warper.AllowTeleport = Immersed;
-                  //  warper.ResetRotation();
+                    //  warper.AllowTeleport = Immersed;
+                    //  warper.ResetRotation();
                     SafetyColliders.SetActive(Immersed);
                     // setup the scene state based on if we are immersed or not.
                     if (Immersed)
@@ -940,7 +940,7 @@ public class LevelControl : NetworkBehaviour
                     else
                     {
                         transform.localScale = startScale;
-                     //   warper.ResetRotation();
+                        //   warper.ResetRotation();
                         warper.SetWorldPosition(transform.position + transform.forward * -2.5f + Vector3.up * 0.25f);
                         VRRoomControl.Instance.EnableControls();
                     }
@@ -950,7 +950,7 @@ public class LevelControl : NetworkBehaviour
 
                 }, null);
         }
-        else if(fadeScript != null && fadeScript.Busy)
+        else if (fadeScript != null && fadeScript.Busy)
         {
             DeferredPathIndex = pathIndex;
             Debug.Log("Warping later");
