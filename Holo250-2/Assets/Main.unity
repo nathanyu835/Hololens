@@ -408,17 +408,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
-    - target: {fileID: 114993542530132652, guid: c3f91538327819d46953333d9605658b,
-        type: 2}
-      propertyPath: m_PlayerPrefab
-      value: 
-      objectReference: {fileID: 1911562243225464, guid: be3b6fd8d3c386840a283c602ce2ed4f,
-        type: 2}
-    - target: {fileID: 114993542530132652, guid: c3f91538327819d46953333d9605658b,
-        type: 2}
-      propertyPath: m_AutoCreatePlayer
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c3f91538327819d46953333d9605658b, type: 2}
   m_IsPrefabParent: 0
@@ -477,18 +466,6 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 0.64291537
       objectReference: {fileID: 0}
-    - target: {fileID: 114572385977621270, guid: 0fc628c0aaea3a149bc2e7e3ac97990f,
-        type: 2}
-      propertyPath: LevelPaths.Array.data[0].Avatar
-      value: 
-      objectReference: {fileID: 1954921448487058, guid: a2699902484ec1e43941bde94040818b,
-        type: 2}
-    - target: {fileID: 114572385977621270, guid: 0fc628c0aaea3a149bc2e7e3ac97990f,
-        type: 2}
-      propertyPath: LevelPaths.Array.data[2].Avatar
-      value: 
-      objectReference: {fileID: 1954921448487058, guid: a2699902484ec1e43941bde94040818b,
-        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0fc628c0aaea3a149bc2e7e3ac97990f, type: 2}
   m_IsPrefabParent: 0

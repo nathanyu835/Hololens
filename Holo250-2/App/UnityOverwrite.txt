@@ -9,7 +9,7 @@ Multiplayer.sln: modified
 GeneratedProjects\UWP\Assembly-CSharp\project.json: 4FCF72A4D5EDB37E24C206A7BCFE7AF1
 GeneratedProjects\UWP\Assembly-CSharp-firstpass\project.json: 4FCF72A4D5EDB37E24C206A7BCFE7AF1
 Multiplayer\App.cs: 4AD729EA26DC19AF67360D6DA5665786
-Multiplayer\Multiplayer.csproj: 6889BA0243D821DE81DD9C3164B340AE
+Multiplayer\Multiplayer.csproj: modified
 Multiplayer\Multiplayer.csproj.user: modified
 Multiplayer\Package.appxmanifest: 6712F2223E2E6AA35E290EEA2FE2F137
 Multiplayer\project.json: 1D02BC64BAC0D041019673A1C4C51737

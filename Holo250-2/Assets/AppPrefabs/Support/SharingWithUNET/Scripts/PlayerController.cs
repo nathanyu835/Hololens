@@ -224,7 +224,7 @@ namespace HoloToolkit.Examples.SharingWithUNET
             SharesSpatialAnchors = update;
 //            if (SharesSpatialAnchors)
 //            {
-//                cloudMaterial.color = Color.red;
+//                cloudMaterial.color = Color.blue;
 //            }
 //            else
 //            {

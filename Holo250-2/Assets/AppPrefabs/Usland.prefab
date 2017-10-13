@@ -13599,7 +13599,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LevelPaths:
   - EntryPoint: {fileID: 1247700378205280}
-    Avatar: {fileID: 1987813922466046, guid: d7ee34e78873a3b40a60f2c9f3a0ef82, type: 2}
+    Avatar: {fileID: 1954921448487058, guid: a2699902484ec1e43941bde94040818b, type: 2}
     Puzzle: {fileID: 1424122292016772}
     PuzzleTipPos: {fileID: 1233701301591726}
     GoalPoint: {fileID: 1092515985039342}
@@ -13611,7 +13611,7 @@ MonoBehaviour:
     GoalPoint: {fileID: 1857983191919924}
     GoalLight: {fileID: 1571559791676096}
   - EntryPoint: {fileID: 1385819050922574}
-    Avatar: {fileID: 1620891148883784, guid: c573e4bb6f272354f88e8f1448197add, type: 2}
+    Avatar: {fileID: 1954921448487058, guid: a2699902484ec1e43941bde94040818b, type: 2}
     Puzzle: {fileID: 1554279515459180}
     PuzzleTipPos: {fileID: 1092497186349962}
     GoalPoint: {fileID: 1055259564992826}
